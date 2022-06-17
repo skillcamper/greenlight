@@ -29,15 +29,22 @@
   justify-content: center;
 
   .header-text {
+    justify-content: center;
     color: #212121;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 70px;
+    margin-bottom: 45px;
 
     span {
       color: #0C0CBF;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      margin-bottom: 24px;
+      font-size: 30px;
     }
   }
 
@@ -58,10 +65,7 @@
       font-size: 20px;
       line-height: 23px;
       color: #0C0CBF !important;
-
-      &:hover {
-        cursor: pointer;
-      }
+      cursor: pointer;
     }
 
     .signup-button {
@@ -78,12 +82,24 @@
       font-size: 20px;
       line-height: 23px;
       color: #FFFFFF !important;
-
-      &:hover {
-        cursor: pointer;
-      }
+      cursor: pointer;
+      @media only screen and (max-width: 1000px) {
+        width: auto;
+        height: 44px;
+        font-size: 14px;
+        line-height: 20px;
+      }  
+    }
+    @media only screen and (max-width: 1000px) {
+      gap: 16px;
+      flex-direction: column;
     }
   }
+  @media only screen and (max-width: 1000px) {
+    padding: 48px 24px;
+    height: auto;
+  }
+
 }
 
 
@@ -94,7 +110,7 @@
   align-items: center;
   justify-content: center;
 
-  .header {
+  .custom-features-header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
