@@ -17,7 +17,7 @@
     <div>
         <h1 class="header-text">Welcome to <span>Skillcamper meet</span></h1>
         <div class="button-div">
-            <div class="signin-button">Sign In</div>
+            <%= link_to t("login"), signin_path, :class => "signin-button" %>
             <%= link_to t("signup.title"), signup_path, :class => "signup-button"%>
         </div>
     </div>
