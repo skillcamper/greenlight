@@ -19,6 +19,60 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.custom-main {
+  height: 450px;
+  background: #F5F5FC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .header-text {
+    color: #212121;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+
+    span {
+      color: #0C0CBF;
+    }
+  }
+  .button-div{
+    display: flex;
+    justify-content: center;
+    .signin-button{
+      padding: 18px 54px;
+      width: 171px;
+      height: 59px;
+      background: #FFFFFF;
+      border: 1px solid #0C0CBF;
+      border-radius: 8px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      color: #0C0CBF;  
+    }
+    .signup-button{
+      padding: 18px 54px;
+      width: 171px;
+      height: 59px;
+      background: #0C0CBF;
+      border: 1px solid #0C0CBF;
+      border-radius: 8px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      color: #FFFFFF;  
+    }
+  }
+}
+
 .responsive-header {
   font-size: 3.3vw;
 }
@@ -29,13 +83,13 @@
 }
 
 .lead {
-  font-size:18px;
+  font-size: 18px;
 }
 
 .feature-stamp {
   .stamp {
-    padding:1em 1.5em;
-    height:auto;
+    padding: 1em 1.5em;
+    height: auto;
   }
 }
 
@@ -45,6 +99,7 @@
     height: 16px;
     border-bottom: 1px solid #d3d3d3;
     text-align: center;
+
     span {
       font-size: 120%;
       background-color: #ffffff;
@@ -63,25 +118,26 @@
   text-align: center;
   background: #cccccc;
   color: #ffffff;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
-  -webkit-transition: background-color .218s,border-color .218s,box-shadow .218s;
-  transition: background-color .218s,border-color .218s,box-shadow .218s;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+  -webkit-transition: background-color .218s, border-color .218s, box-shadow .218s;
+  transition: background-color .218s, border-color .218s, box-shadow .218s;
   white-space: nowrap;
   border-radius: 2px;
   border: 1px solid transparent;
-  margin-bottom:20px;
+  margin-bottom: 20px;
+
   &:hover {
     cursor: pointer;
     color: #ffffff;
-    -webkit-box-shadow: 0 0 3px 3px rgba(66,133,244,.3);
-    box-shadow: 0 0 3px 3px rgba(66,133,244,.3);
+    -webkit-box-shadow: 0 0 3px 3px rgba(66, 133, 244, .3);
+    box-shadow: 0 0 3px 3px rgba(66, 133, 244, .3);
   }
 
   .customBtn-icon {
     display: inline-block;
     vertical-align: middle;
-    padding:13px 15px 13px 15px;
-    float:left;
+    padding: 13px 15px 13px 15px;
+    float: left;
     background: #ffffff;
   }
 
@@ -90,13 +146,13 @@
     line-height: 48px;
     font-weight: 600;
     letter-spacing: .21px;
-    padding:0 25px;
+    padding: 0 25px;
   }
 
   .customBtn-image {
     background: #ffffff;
     background-size: 18px 18px;
-    padding:10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
   }
 }
 
@@ -107,7 +163,7 @@
   .customBtn-image {
     background: #ffffff image-url("google-logo.png") no-repeat left top;
     background-size: 18px 18px;
-    padding:10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
   }
 }
 
@@ -118,7 +174,7 @@
   .customBtn-image {
     background: #ffffff image-url("twitter-logo.png") no-repeat left top;
     background-size: 18px 18px;
-    padding:10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
   }
 }
 
@@ -129,7 +185,7 @@
   .customBtn-image {
     background: #ffffff image-url("office365-logo.jpeg") no-repeat left top;
     background-size: 18px 18px;
-    padding:10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
   }
 }
 
@@ -140,7 +196,7 @@
   .customBtn-image {
     background: #ffffff image-url("windows-logo.png") no-repeat left top;
     background-size: 18px 18px;
-    padding:10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
   }
 }
 
@@ -151,7 +207,7 @@
   .customBtn-image {
     background: #ffffff image-url("ldap-logo.png") no-repeat left top;
     background-size: 18px 18px;
-    padding:10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
   }
 }
 
@@ -162,7 +218,7 @@
   .customBtn-image {
     background: #ffffff image-url("openid-logo.png") no-repeat left top;
     background-size: 18px 18px;
-    padding:10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
   }
 }
 
@@ -170,7 +226,7 @@
   font-size: 16px;
 }
 
-.table-responsive tbody td:first-child > *:first-child {
+.table-responsive tbody td:first-child>*:first-child {
   max-height: 3em;
   overflow: hidden;
   max-width: 200px;
