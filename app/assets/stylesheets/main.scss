@@ -29,7 +29,6 @@
   justify-content: center;
 
   .header-text {
-    justify-content: center;
     color: #212121;
     font-family: 'Roboto';
     font-style: normal;
@@ -45,6 +44,8 @@
     @media only screen and (max-width: 1000px) {
       margin-bottom: 24px;
       font-size: 30px;
+      line-height: 42px;
+      text-align: center;
     }
   }
 
@@ -66,6 +67,12 @@
       line-height: 23px;
       color: #0C0CBF !important;
       cursor: pointer;
+      @media only screen and (max-width: 1000px) {
+        width: auto;
+        height: 44px;
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
 
     .signup-button {
@@ -88,6 +95,8 @@
         height: 44px;
         font-size: 14px;
         line-height: 20px;
+        padding: 12px 124px;
+        margin-left: 0px;
       }  
     }
     @media only screen and (max-width: 1000px) {
