@@ -55,7 +55,10 @@
       font-weight: 700;
       font-size: 20px;
       line-height: 23px;
-      color: #0C0CBF;  
+      color: #0C0CBF;
+      &:hover {
+        cursor: pointer;
+      }
     }
     .signup-button{
       margin-left: 32px;
@@ -70,7 +73,10 @@
       font-weight: 700;
       font-size: 20px;
       line-height: 23px;
-      color: #FFFFFF;  
+      color: #FFFFFF;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
