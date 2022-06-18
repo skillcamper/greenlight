@@ -221,6 +221,8 @@
   align-items: center;
   height: 72px;
   width: 100%;
+  position: fixed;
+  bottom: 0;
 
   .term-privacy-text {
     font-family: 'Roboto';
@@ -232,7 +234,7 @@
     color: #231F20;
 
     .underline-and-blue {
-      color: #0C0CBF;
+      color: #0C0CBF !important;
       text-decoration: underline;
       font-weight: 500;
       cursor: pointer;
