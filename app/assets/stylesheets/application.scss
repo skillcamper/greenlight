@@ -75,8 +75,18 @@ a {
 
 .header {
   height: $header-height;
+  @media only screen and (max-width: 1000px) {
+    height: 56px;
+  }
 }
-
+.header-brand-img{
+  width: 118px;
+  height: 46px;
+  @media only screen and (max-width: 1000px) {
+    width: 95px;
+    height: 37px;  
+  }
+}
 .wrapper {
   position: relative;
   height: auto;
